@@ -1,5 +1,6 @@
 import json
 import shutil
+import sys
 from pathlib import Path
 from typing import Union
 
@@ -53,6 +54,6 @@ class OrganizeFiles:
 
 if __name__ == "__main__":
     org_files = OrganizeFiles()
-    org_files('/mnt/c/Users/mitra/Downloads')
+    org_files(sys.argv[1])
     logger.info("Done!")
 
